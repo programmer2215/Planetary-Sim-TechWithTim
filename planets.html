@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module planets</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>planets</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cedwin%5Cdesktop%5Cmark%5Cphysics%20sim%5Cplanets.py">c:\users\edwin\desktop\mark\physics sim\planets.py</a></font></td></tr></table>
+    <p><tt>Planetary&nbsp;Simulation&nbsp;using&nbsp;Pygame,&nbsp;exhibiting&nbsp;Real&nbsp;Physics.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="math.html">math</a><br>
+</td><td width="25%" valign=top><a href="pygame.html">pygame</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="planets.html#Planet">Planet</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Planet">class <strong>Planet</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Planet">Planet</a>&nbsp;Class&nbsp;Defines&nbsp;the&nbsp;construct&nbsp;of&nbsp;a&nbsp;<a href="#Planet">Planet</a><br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Planet-__init__"><strong>__init__</strong></a>(self, x, y, radius, color, mass)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="Planet-attraction"><strong>attraction</strong></a>(self, other) -&gt; tuple</dt><dd><tt>takes&nbsp;&lt;code&gt;other&lt;/code&gt;&nbsp;<a href="#Planet">Planet</a>&nbsp;<a href="builtins.html#object">object</a>&nbsp;as&nbsp;argument.&nbsp;Calculates&nbsp;The&nbsp;Attraction&nbsp;between&nbsp;self&nbsp;and&nbsp;<br>
+the&nbsp;&lt;code&gt;other&lt;code&gt;&nbsp;planet&nbsp;<a href="builtins.html#object">object</a>.&nbsp;returns&nbsp;&lt;code&gt;force_x&lt;/code&gt;&nbsp;Horizontal&nbsp;component&nbsp;and<br>
+&lt;code&gt;force_y&lt;/code&gt;&nbsp;Vertical&nbsp;component&nbsp;of&nbsp;the&nbsp;force&nbsp;between&nbsp;the&nbsp;two&nbsp;planets</tt></dd></dl>
+
+<dl><dt><a name="Planet-draw"><strong>draw</strong></a>(self, win) -&gt; None</dt><dd><tt>take&nbsp;&lt;code&gt;win&lt;/code&gt;&nbsp;(Pygame&nbsp;window)&nbsp;as&nbsp;argument.&nbsp;Draws&nbsp;The&nbsp;<a href="#Planet">Planet</a>&nbsp;and&nbsp;its&nbsp;orbit&nbsp;<br>
+in&nbsp;the&nbsp;Pygame&nbsp;Window.</tt></dd></dl>
+
+<dl><dt><a name="Planet-update_pos"><strong>update_pos</strong></a>(self, planets) -&gt; None</dt><dd><tt>takes&nbsp;&lt;code&gt;planets&lt;/code&gt;&nbsp;Array&nbsp;of&nbsp;type&nbsp;<a href="#Planet">Planet</a>&nbsp;as&nbsp;argument.&nbsp;Updates&nbsp;the&nbsp;<br>
+position&nbsp;of&nbsp;each&nbsp;planet&nbsp;in&nbsp;the&nbsp;&lt;code&gt;planets&lt;/code&gt;&nbsp;Array</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>AU</strong> = 149600000000.0</dl>
+
+<dl><dt><strong>G</strong> = 6.67428e-11</dl>
+
+<dl><dt><strong>SCALE</strong> = 1.3368983957219252e-09</dl>
+
+<dl><dt><strong>TIMESTEP</strong> = 86400</dl>
+
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-main"><strong>main</strong></a>()</dt><dd><tt>main&nbsp;function&nbsp;that&nbsp;runs&nbsp;when&nbsp;this&nbsp;file&nbsp;is&nbsp;called</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>BLACK</strong> = (0, 0, 0)<br>
+<strong>BLUE</strong> = (0, 30, 250)<br>
+<strong>BROWN</strong> = (139, 125, 130)<br>
+<strong>DARK_GREY</strong> = (200, 200, 200)<br>
+<strong>FONT</strong> = &lt;pygame.font.Font object&gt;<br>
+<strong>HEIGHT</strong> = 700<br>
+<strong>RED</strong> = (240, 25, 10)<br>
+<strong>WHITE</strong> = (255, 255, 255)<br>
+<strong>WIDTH</strong> = 700<br>
+<strong>WIN</strong> = &lt;Surface(700x700x32 SW)&gt;<br>
+<strong>YELLOW</strong> = (255, 255, 0)</td></tr></table>
+</body></html>
